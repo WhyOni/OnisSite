@@ -1,6 +1,11 @@
 body {
+    margin: 0%;
+    background-color: lightgreen;
+}
+.container {
     height: 100vh;
     width: 100%;
+    display: flex;
 }
 .SideBar {
     width: 30%;
@@ -11,4 +16,122 @@ body {
     width: 70%;
     height: 100%;
     background-color: lightgreen;
+}
+.SideBarButton {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-start;
+    transform: translate(5px, -25px);
+}
+.lines {
+    background-color: white;
+    width: 100%;
+    height: 10px;
+    transition: 0.5s;
+}
+.SideBarButton:hover *:first-child {
+    transform: translateY(20px) rotate(45deg);
+    transition: 0.3s linear;
+}
+.SideBarButton:hover *:last-child {
+    transform: translateY(-20px) rotate(-45deg);
+    transition: 0.3s linear;
+}
+.SideBarButton:hover #line2 {
+    transform: scale(0);
+    transition: 0.3s linear;
+}
+.names {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    opacity: 0%; 
+    transform: translateX(-50px);
+    transition: 0.3s;
+}
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+.SideBarButton:hover + #name1 {
+    opacity: 100%;
+    transform: translateX(0);
+    transition: 0.3s linear;
+}
+.SideBarButton:hover ~ #name2 {
+    opacity: 100%;
+    transform: translateX(0);
+    transition: 0.3s linear 0.1s;
+}
+.SideBarButton:hover ~ #name3 {
+    opacity: 100%;
+    transform: translateX(0);
+    transition: 0.3s linear 0.2s;
+}
+.SideBarButton:hover ~ #name4 {
+    opacity: 100%;
+    transform: translateX(0);
+    transition: 0.3s linear 0.3s;
+}
+.SideBar2 {
+    width: 30%;
+    height: 100%;
+    background-color: green;
+}
+.texts2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    margin-top: 110px;
+}
+.names2 {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+.framestop {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    opacity: 0%;
+    transition: 0.3s;
+    transform: translateY(-3px);
+}
+.framesbottom {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    opacity: 0%;
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+.bruh1:hover > #frame1 {
+    opacity: 100%;
+    transform: translateY(0);
+    transition: 0.3s;
+}
+.bruh2:hover > #frame2 {
+    opacity: 100%;
+    transform: translateY(0);
+    transition: 0.3s;
+}
+.bruh3:hover > #frame3 {
+    opacity: 100%;
+    transform: translateY(0);
+    transition: 0.3s;
+}
+.bruh4:hover > #frame4 {
+    opacity: 100%;
+    transform: translateY(0);
+    transition: 0.3s;
 }
