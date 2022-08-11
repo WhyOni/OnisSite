@@ -48,9 +48,8 @@ body {
     font-size: x-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    opacity: 0%; 
-    transform: translateX(-50px);
     transition: 0.3s;
+    text-align: center;
 }
 .texts {
     display: flex;
@@ -59,45 +58,27 @@ body {
     justify-content: space-around;
     height: 500px;
 }
-.SideBarButton:hover + #name1 {
-    opacity: 100%;
-    transform: translateX(0);
-    transition: 0.3s linear;
+.SideBarButton:hover ~ .bruh1 {
+    animation: FadeIn 0.5s ease-out forwards;
 }
-.SideBarButton:hover ~ #name2 {
-    opacity: 100%;
-    transform: translateX(0);
-    transition: 0.3s linear 0.1s;
+.SideBarButton:hover ~ .bruh2 {
+    animation: FadeIn 0.5s ease-out forwards 0.1s;
 }
-.SideBarButton:hover ~ #name3 {
-    opacity: 100%;
-    transform: translateX(0);
-    transition: 0.3s linear 0.2s;
+.SideBarButton:hover ~ .bruh3 {
+    animation: FadeIn 0.5s ease-out forwards 0.2s;
 }
-.SideBarButton:hover ~ #name4 {
-    opacity: 100%;
-    transform: translateX(0);
-    transition: 0.3s linear 0.3s;
+.SideBarButton:hover ~ .bruh4 {
+    animation: FadeIn 0.5s ease-out forwards 0.3s;
 }
-.SideBar2 {
-    width: 30%;
-    height: 100%;
-    background-color: green;
-}
-.texts2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 400px;
-    margin-top: 110px;
-}
-.names2 {
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    width: 100px;
-    text-align: center;
+@keyframes FadeIn {
+    0% {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
 }
 .framestop {
     width: 100px;
