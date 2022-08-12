@@ -1,6 +1,6 @@
 body {
     margin: 0%;
-    background-color: lightgreen;
+    background-color: rgb(71, 189, 189);
 }
 .container {
     height: 100vh;
@@ -10,12 +10,12 @@ body {
 .SideBar {
     width: 15%;
     height: 100%;
-    background-color: darkgreen;
+    background-color: rgb(34, 144, 144);
 }
 .MainThing {
     width: 70%;
     height: 100%;
-    background-color: lightgreen;
+    background-color: rgb(71, 189, 189);
 }
 /* lol */
 .SideBarButton {
