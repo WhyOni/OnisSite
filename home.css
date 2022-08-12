@@ -83,7 +83,7 @@ body {
 }
 .framestop {
     width: 100px;
-    height: 3px;
+    height: 1.5px;
     background-color: white;
     opacity: 0%;
     transition: 0.3s;
@@ -91,7 +91,7 @@ body {
 }
 .framesbottom {
     width: 100px;
-    height: 3px;
+    height: 1.5px;
     background-color: white;
     opacity: 0%;
     transition: 0.3s;
