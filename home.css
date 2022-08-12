@@ -128,12 +128,13 @@ body {
     display: grid;
     grid-template-columns: 69% 15px auto;
     grid-template-rows: 60% 15px auto;
+    transform: rotateX(50deg) rotateZ(35deg);
 }
 .grid1{
     /* border: 1px black solid; */
     grid-area: 1/1/1/1;
     display: grid;
-    grid-template-rows: 58% 15px auto;
+    grid-template-rows: 58% 15px auto;   
 }
 .grid11{
     grid-row-start: 1;
