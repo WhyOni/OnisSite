@@ -165,3 +165,12 @@ body {
     background-color: lime;
     grid-area: 3/3;
 }
+img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+img:hover {
+    transform: translate(-50px, -50px);
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
