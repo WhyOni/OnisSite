@@ -137,7 +137,6 @@ body {
 }
 .grid11{
     grid-row-start: 1;
-    background-color: aqua;
 }
 .grid12{
     grid-row-start: 3;
@@ -147,23 +146,18 @@ body {
 }
 .grid121{
     grid-column-start: 1;
-    background-color: brown;
 }
 .grid122{
     grid-column-start: 3 ;
-    background-color: cornflowerblue;
 }
 .grid2{
-    background-color: skyblue;
     grid-area: 1/3;
     display: grid;
 }
 .grid3{
-    background-color: deeppink;
     grid-area: 3/1;
 }
 .grid4{
-    background-color: lime;
     grid-area: 3/3;
 }
 img {
@@ -172,6 +166,7 @@ img {
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 img:hover {
-    transform: translate(-50px, -50px);
+    transform: translate(-40px, -40px);
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 10px 13px rgb(95, 210, 137),20px 26px rgb(107, 195, 206),30px 39px rgb(138, 201, 195),40px 52px rgb(183, 135, 213);
 }
