@@ -123,14 +123,14 @@ body {
     position: relative;
     left: 350px;
     top: 70px;
-    border: 3px solid rgb(14, 61, 14);
-    border-radius: 5px;
+    /* border: 3px solid rgb(14, 61, 14);
+    border-radius: 5px; */
     display: grid;
     grid-template-columns: 69% 15px auto;
     grid-template-rows: 60% 15px auto;
 }
 .grid1{
-    border: 1px black solid;
+    /* border: 1px black solid; */
     grid-area: 1/1/1/1;
     display: grid;
     grid-template-rows: 58% 15px auto;
@@ -142,7 +142,8 @@ body {
 .grid12{
     grid-row-start: 3;
     display: grid;
-    grid-template-columns: 58% 15px auto;
+    height: 250px;
+    grid-template-columns: 40% 15px auto;
 }
 .grid121{
     grid-column-start: 1;
